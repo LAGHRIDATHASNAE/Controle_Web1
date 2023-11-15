@@ -24,8 +24,5 @@ public class Servicee {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nom;
-	
-	@OneToMany(mappedBy="servicee", cascade = CascadeType.ALL)
-	@JsonIgnore
-	private List<Employe> employes;
+
 }
